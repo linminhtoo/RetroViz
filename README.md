@@ -4,6 +4,7 @@ The 3 models are:
 - RetroXpert: https://github.com/uta-smile/RetroXpert
 - GLN (Graph Logic Network): https://github.com/Hanjun-Dai/GLN
 - RetroSim: https://github.com/connorcoley/retrosim
+
 I have retrained all 3 models from scratch on a slightly cleaner version of the USPTO-50K dataset than the original authors. Therefore, the predictions & evaluation statistics I got are slightly different (slightly worse actually, because there is some overlap in train & test reactions, which I removed from the training dataset, making the test set slightly harder). Unfortunately I am unable to release the cleaned data files nor the python scripts yet as it is still a work in progress for another project. See below for the link to the prediction CSV files.
 
 ## Data
