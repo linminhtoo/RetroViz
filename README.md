@@ -13,8 +13,6 @@ I have retrained all 3 models from scratch on a slightly cleaner version of the 
 ![plot](./compare_rxn_type_topk_3proposers_test.png)
 
 2. Also comparing across 10 reaction types, but now, binning reactions depending on whether either or both models predicted the reactants correctly up to some rank (note that rank is 0-indexed, so rank = 0 means proposer recovered the true reactants as its top-1 prediction). These pairwise plots were generated for each pair of proposers.
-![plot](./retrosim_vs_retroxpert_rank_matrix_typed_top1to5_test.png)
-![plot](./GLN_vs_retroxpert_rank_matrix_typed_top1to5_test.png)
 ![plot](./GLN_vs_retrosim_rank_matrix_typed_top1to5_test.png)
 
 ## Data
