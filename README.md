@@ -11,11 +11,10 @@ I have retrained all 3 models from scratch on a slightly cleaner version of the 
 CSV files containing top-200 proposals from each of the 3 models are uploaded to [this google drive folder](https://drive.google.com/drive/folders/1NX8iZI3xfUzlXkWsfTyFlGj6srlNSQDd?usp=sharing) As the name suggests, ground truth precursors have been filtered out since we don't need them; instead, just a column 'rank_of_true_precursor' is enough to remember the performance of the proposer. This column is 0-indexed (i.e. rank = 0 means the proposer recovered the true reactants as its top-1 prediction. Rank = 9999 means out of top-200 predictions, none of them matched the ground truth). 
 
 ## Requirements & Setup instructions
-RDKit is the main package to generate the molecular drawings. Pandas is used to manipulate prediction data from CSV files
-Tested on Python 3.6
+RDKit is the main package to generate the molecular drawings. Pandas is used to manipulate prediction data from CSV files. Tested on Python 3.6
 ```
     # ensure conda is initialized first
-    conda create -n retroviz python=3.6 tqdm pathlib typing scipy pandas joblib -y
+    conda create -n retroviz python=3.6 tqdm pathlib typing pandas -y
     conda activate retroviz
 
     conda install -y rdkit -c rdkit
